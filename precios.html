@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Invie ¡Tus mejores guitarras!</title>
+    <meta charset="utf-8"/>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Allerta" rel="stylesheet"> <!-- Se colocan las dos fuentes en un mismo link para que cargue la página más rápido. -->
+    <link rel="stylesheet" type="text/css" href="css/invie.css">
+  </head>
+  <body>
+    <header id="header" class="header background"> <!-- Header -->
+      <div class="contenedor">
+        <figure class="logotipo"> <!-- Logotipo -->
+        <img src="images/invie.png" width="186" height="60" alt="Invie logotipo" />
+        </figure>
+        <nav class="menu"> <!-- Menú -->
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="index.html#guitarras">Guitarras</a>
+            </li>
+            <li>
+              <a href="precios.html">Precios</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="tabla">
+      <div class="contenedor">
+        <table>
+          <thead>
+            <tr>
+              <th>Modelo</th>
+              <th>Precios</th>
+              <th>Descripción</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Invie Classic</td>
+              <td>$100.000</td>
+              <td>Una guitarra muy pro</td>
+            </tr>
+            <tr>
+              <td>Invie Classic</td>
+              <td>$100.000</td>
+              <td>Una guitarra muy pro</td>
+            </tr>
+            <tr>
+              <td>Invie Classic</td>
+              <td>$100.000</td>
+              <td>Una guitarra muy pro</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="contenedor">
+        <div class="contacto">
+          <img src="images/invie-white.png" alt="logotipo blanco" />
+          <a href="tel:+57302456789"><strong>Teléfono</strong><span> 302456789</span></a>
+          <a href="mailto:contacto@invie.com"><strong>E-mail</strong><span> contacto@invie.com</span></a>
+        </div>
+        <form class="formulario">
+          <div class="col1">
+            <label for="nombre">Nombre</label> <!-- for se utiliza para que al seleccionar la caja del formulario se haga focus (se ilumine) y debe llevar el nombre del id relacionado a dicha caja -->
+            <input type="text" required id="nombre" name="nombre" /> <!-- El input se utiliza para textos de una línea. Atributos: placeholder="Descricpción de lo que se quiere escribir"; value= texto o valores escritos por defecto; required=se usa para que el elemento sea requerido o especificar por ejemplo que lleve arrobas, .com, etc-->
+            <label for="email">E-mail</label>
+            <input type="email" required id="email" name="email" />
+            <div class="sexo">
+              <label for="mujer">
+                <input type="radio" checked id="mujer" name="sexo" value="Mujer" /> Mujer <!-- name sirve para indicar qué es lo que se está enviando y para que al seleccionar una opción se deseleccioe la otra, por eso se debe colocar el mismo nombre -->
+              </label>
+              <label for="hombre">
+                <input type="radio" id="hombre" name="sexo" value="Hombre" /> Hombre <!-- Value se coloca en estos imputs de radio o check para que el backend sepa qué se seleccionó -->
+              </label>
+            </div>
+            <div class="intereses">
+              <label for="Cotizacion">
+                <input type="checkbox" checked id="Cotizacion" name="intereses" value="cotizacion" /> Cotización
+              </label>
+              <label for="Reclamos">
+                <input type="checkbox" id="Reclamos" name="intereses" value="reclamos" /> Reclamos
+              </label>
+              <label for="Comentarios">
+                <input type="checkbox" id="Comentarios" name="intereses" value="comentarios" /> Comentarios
+              </label>
+              <label for="Otros">
+                <input type="checkbox" id="Otros" name="intereses" value="otros"> Otros
+              </label>
+            </div>            
+          </div>
+          <div class="col2">
+            <label for="comentarios">Comentarios</label>
+            <textarea name="comentarios" id="comentarios" cols="30" rows="7"></textarea> <!-- A diferencia de input, este se usa para escribir en más de una línea. -->
+            <input type="Submit" value="Enviar" class="boton" /> <!-- submit se usa para crear botones tipo "enviar" -->
+          </div>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
+
+<!-- Hay dos tipos de celdas: normales (td) y de cabecera (th). 
+Web de carácteres HTML https://dev.w3.org/html5/html-author/charref-->
